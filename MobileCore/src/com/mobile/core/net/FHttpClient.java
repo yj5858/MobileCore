@@ -80,7 +80,7 @@ public class FHttpClient {
 			@Override
 			public void process(HttpRequest request, HttpContext context) {
 				if (!request.containsHeader(HEADER_ACCEPT_ENCODING)) {
-					request.addHeader(HEADER_ACCEPT_ENCODING, ENCODING_GZIP);
+					request.addHeader(HEADER_ACCEPT_ENCODING, ENCODING_GZIP);//告诉服务器要使用gzip
 				}
 			}
 		});
@@ -94,7 +94,7 @@ public class FHttpClient {
 						if (element.getName().equalsIgnoreCase(ENCODING_GZIP)) {
 							BasicHttpEntity convertEntity = new BasicHttpEntity();
 							try {
-								convertEntity.setContent(new GZIPInputStream(response.getEntity().getContent()));
+								convertEntity.setContent(new GZIPInputStream(response.getEntity().getContent()));//解析gizp
 							} catch (IOException e) {
 								e.printStackTrace();
 							}
