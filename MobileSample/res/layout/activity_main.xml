@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#FFFFF0">
+	
+    <TableLayout        
+        android:layout_width="500dp"
+        android:layout_height="350dp" 
+        android:layout_centerInParent="true"
+        android:stretchColumns="0,2"
+        android:id="@+id/login_view"
+        android:background="#5FFFE4E1">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp">
+            <TextView />
+
+		    <EditText
+		        android:id="@+id/userName"
+		        android:layout_width="400dp"
+		        android:layout_height="80dp"
+		        android:layout_column="1"
+		        android:layout_weight="1.0"
+		        android:hint="用户名"
+		        android:inputType="textPersonName"
+		        android:scrollHorizontally="true"
+		        android:textColor="#000000"
+		        android:textSize="25dp">
+            </EditText>
+            <TextView />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" 
+            android:layout_marginTop="30dp">
+            <TextView />
+		    <EditText
+		        android:id="@+id/password"
+		        android:layout_column="1"
+                android:layout_width="400dp"
+                android:layout_height="80dp"
+                android:layout_weight="1.0"
+                android:inputType="textPassword" 
+                android:textColor="#000000"                              
+                android:hint="密码" 
+                android:textSize="25dp">
+            </EditText>
+            <TextView />
+        </TableRow>        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout 
+                android:layout_width="fill_parent"
+            	android:layout_height="80dp"
+            	android:layout_marginTop="30dp"
+            	android:layout_span="3">
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="175dp"                    
+                    android:text="登录" 
+                    android:textColor="#000000"
+                    android:textSize="25dp"/>
+                
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
