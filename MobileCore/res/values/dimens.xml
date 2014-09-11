@@ -14,5 +14,10 @@
     
     <dimen name="side_navigation_item_text_size">18sp</dimen>
     <dimen name="side_navigation_item_text_padding_left">10dp</dimen>
+<!-- Preference fragment padding, bottom -->
+    <dimen name="preference_fragment_padding_bottom">0dp</dimen>
+    <!-- Preference fragment padding, sides -->
+    <dimen name="preference_fragment_padding_side">16dp</dimen>
 
+    <integer name="preference_fragment_scrollbarStyle">0x02000000</integer> <!-- outsideOverlay -->
 </resources>
